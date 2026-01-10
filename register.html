@@ -1,0 +1,77 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+	
+	<div class="login-wrapper">
+<form class="login-box" onsubmit="return registerUser()">
+	<br><h2> REGISTER </h2><br>
+	<label for="fname">First name:</label><br><p>
+	<input type="text" id="fname" name="fname"><br><p>
+	
+	<label for="lname">Last name:</label><br><p>
+	<input type="text" id="lname" name="lname"><br><p>
+	
+	<label for= "email"> Email </label><br><p>
+	<input type="email" id= "email"><br><p>
+	
+	<label for="Username">Username:</label><br><p>
+    <input type="text" id="newUsername" placeholder="Username" required><br><br><p>
+	
+	<label for="Password">Password:</label><br><p>
+    <input type="password" id="newPassword" placeholder="Password" required><br><br><p>
+	
+	<label for="CPassword">Confirm Password:</label><br><p>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br><br><p>
+
+    <button type="submit">Register</button>
+
+    <p class="switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+    <p id="error"></p>
+</form>
+</div>
+</body>
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+
+</html>
+<script>
+function registerUser() {
+    alert("Thankyou for register with us!");
+	location.reload();
+    return false;
+}
+</script>

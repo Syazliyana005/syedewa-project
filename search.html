@@ -1,0 +1,89 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+	
+	
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="liveSearch()">
+    <div id="searchResults" class="search-results"></div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+const products = [
+    { name: "Eye Liner", link: "eyes.html#eyelinerDetails" },
+    { name: "Eye Shadow (Madrid)", link: "eyes.html#eyeshadowDetails" },
+	{ name: "Eye Shadow (Bangkok)", link: "eyes.html#eyeshadow2Detail" },
+	{ name: "Brow Setting Gel", link: "eyes.html#browDetails" },
+    { name: "Matte Lip Lacquer", link: "matte lip lacquer.html" },
+    { name: "Liquid Shine", link: "liquid shine.html" },
+	{ name: "Lipstick", link: "lipstick.html" },
+	{ name: "Lipliner", link: "lipliner.html" },
+	{ name: "Lip treatment", link: "liptreatment.html" },
+	{ name: "Face Powder", link: "Syedewa Face.html#browDetails" },
+	{ name: "Face Blush", link: "Syedewa Face.html#blushDetails" },
+	{ name: "Face Mist", link: "Syedewa Face.html#facemistDetails" },
+	{ name: "Artist Face Brush ", link: "accessories.html" },
+	{ name: "Signature Box", link: "accessories.html" }
+];
+
+function liveSearch() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const resultsBox = document.getElementById("searchResults");
+    resultsBox.innerHTML = "";
+
+    if (input === "") {
+        resultsBox.style.display = "none";
+        return;
+    }
+
+    let found = false;
+
+    products.forEach(product => {
+        if (product.name.toLowerCase().includes(input)) {
+            found = true;
+
+            const div = document.createElement("div");
+            div.className = "search-item";
+            div.textContent = product.name;
+
+            div.onclick = () => {
+                window.location.href = product.link;
+            };
+
+            resultsBox.appendChild(div);
+        }
+    });
+
+    resultsBox.style.display = found ? "block" : "none";
+}
+</script>

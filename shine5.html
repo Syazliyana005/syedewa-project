@@ -1,0 +1,141 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+
+	<section class="products">
+
+		<div class="product-main-layout">
+		
+			<div class="card">
+				<div class="img-box">
+					<img src="swatch3/shine1.jpeg" alt="Liquid Shine" onclick="showDetails('artistDetails')" />
+				</div>
+			</div>	
+
+	<!-- MATERIAL BOX -->
+
+   <div class="info-box">
+          <div class="all-swatches-container">
+	
+
+<div class="info-section">
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+			   <p> <ul>
+					<li></strong> Get to Know</strong> </li>
+					This moisturising, non-sticky clear gloss is enriched with skincare benefits, leaving lips looking shiny, pouty, soft and smooth in one swipe. Use it on bare lips or top it over lipstick for added shine.
+					</p><br>
+					<li><strong> Feels</strong> </li>
+					Comfortable, lightweight, moisturising, non-greasy and long-lasting on the lips.
+					</p><br>
+					<li><strong>Colour</strong> </li>
+					Crystal clear.
+					</p><br>
+					<li><strong>Bonus</strong></li>
+					Soft, firm and fuss-free applicator ensure an even application with maximum coverage.
+					</p><br>
+					<li><strong>Contains</strong> </li>
+					Jojoba seed oil, coconut extract oil and honey extract that help to moisturise and nourish the lips.
+
+					</ul>
+			
+          </ol>
+        </div>
+        
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 72.90</p><br>
+        </div>
+	  </div>
+	  
+		<div id="myModal" class="modal">
+	
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+	
+ <button class="add-to-cart" onclick="addToCart('Liquid Shine 4.5ML Inderapura ', 72.90)">Add to Cart</button>
+
+<div id="thankYouPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <p id="productAddedMessage">Thank you for adding the product to your cart!</p>
+        <button class="close-popup" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+	<button class="close-detail" onclick="window.location.href='Syedewa Lips.html'">
+		BACK
+	</button>
+	
+</section>
+
+<script>
+// Bahagian Modal (Sama macam sebelum ni)
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function openModal(img) {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+document.querySelector(".close").onclick = function () {
+    modal.style.display = "none";
+}
+
+
+function addToCart(productName, productPrice) {
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: productName, price: productPrice });
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Popup
+    document.getElementById("thankYouPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("thankYouPopup").style.display = "none";
+}
+</script>
+
+</body>
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+
+</html>
+

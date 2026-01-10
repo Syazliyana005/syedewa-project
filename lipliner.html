@@ -1,0 +1,214 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+	<section class="products">
+
+		<div class="product-main-layout">
+		
+			<div class="card">
+				<div class="img-box">
+					<img src="swatch4/lipliner1.jpg" alt="Lip Liner" onclick="showDetails('artistDetails')" />
+				</div>
+			</div>	
+
+	<!-- MATERIAL BOX -->
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <div class="all-swatches-container">
+	
+	<div class="swatch-row">
+	<div class="swatch-section">
+    <p>Minis Brown</p>
+    <div class="swatch-grid">
+
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lbali.jpg" alt="Bali" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Bali', 39.90)">+ Cart</button>
+		</div>
+		
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lbudapest.jpg" alt="Budapest" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Budapest', 39.90)">+ Cart</button>
+		</div>
+   
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lcaracas.jpg" alt="Caracas" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Caracas', 39.90)">+ Cart</button>
+		</div>
+
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lkampala.jpg" alt="Kampala" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Kampala', 39.90)">+ Cart</button>
+		</div>
+    </div>
+	</div>
+
+	<div class="swatch-row">
+	
+	<div class="swatch-section">
+    <p>Minis Red</p>
+    <div class="swatch-grid">
+
+
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lsriaman.jpg" alt="Sri Aman" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Sri Aman', 39.90)">+ Cart</button>
+		</div>
+
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lsamara.jpg" alt="Samara" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Samara', 39.90)">+ Cart</button>
+		</div>
+
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<div class="swatch">
+				<img src="swatch1/Lverona.jpg" alt="Verona" onclick="openModal(this)">
+			</div>
+			<button class="quick-add" onclick="addToCart('Lip Liner Verona', 39.90)">+ Cart</button>
+		</div>
+    </div>
+	</div>
+	</div>
+</div>
+</div>
+
+
+<div class="info-section">
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p> <ul>
+					<li><strong>Get to know</strong> </li>
+					A pencil designed for shaping, lining or filling in the lip. They are available in a few selection of colours that each work well with many different lipstick shades.
+					</p><br>
+					<li><strong>Feels</strong> </li>
+					Lip pencils have a smooth and creamy texture that is perfect for outlining lips or colouring them in.
+					</p><br>
+					<li><strong>Colour</strong> </li>
+					<p>Bali - Deep golden red with brown-purple undertone.</p>
+					<p>Budapest - Dark Pink Nude.</p>
+					<p>Caracas - Coffee Brown.</p>
+					<p>Kampala - Tuscan Brown.</p>
+					<p>Sri Aman - Deep mauve with a pink undertone.</p>
+					<p>Samara - Toasted Mauve.</p>
+					<p>Verona - Peach Beige. </p>
+					</p><br>
+					<li><strong>How To Use</strong> </li>
+					Apply before lipstick by lining your lips using the pencil tip for a defined lip look with long-lasting colour. Try a shade slightly deeper than your lipstick and blend with a blending brush for a fuller lip look.
+				</ul>
+          </ol>
+        </div>
+        
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 39.90</p><br>
+        </div>
+	  </div>
+	  
+		<div id="myModal" class="modal">
+	
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+	
+                <!-- Popup Thank You -->
+	<div id="thankYouPopup" class="popup" style="display:none;">
+		<div class="popup-content">
+			<p id="productAddedMessage">Product added!</p>
+			<button class="close-popup" onclick="closePopup()">Close</button>
+		</div>
+	</div>
+				
+	<button class="close-detail" onclick="window.location.href='Syedewa Lips.html'">
+		BACK
+	</button>
+
+</section>
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function openModal(img) {
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}
+
+document.querySelector(".close").onclick = function () {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function addToCart(productName, productPrice) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: productName, price: productPrice });
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    document.getElementById("productAddedMessage").innerText = "Thank you! " + productName + " has been added to cart.";
+    
+    // tunjukkan popup
+    document.getElementById("thankYouPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("thankYouPopup").style.display = "none";
+}
+</script>
+
+</body>
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+
+</html>
