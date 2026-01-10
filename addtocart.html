@@ -1,0 +1,68 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+	
+<br><h2>YOUR CART</h2>
+
+<div id="cartItems"></div>
+<p id="totalPrice"></p>
+<button onclick="checkout()">Checkout</button>
+
+</body>
+</html>
+<script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartDiv = document.getElementById('cartItems');
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        cartDiv.innerHTML += `<p>${item.name} - RM ${item.price.toFixed(2)} 
+        <button onclick="removeItem(${index})">Remove</button></p>`;
+        total += item.price;
+    });
+
+    document.getElementById('totalPrice').innerText = `Total: RM ${total.toFixed(2)}`;
+
+    function removeItem(index) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        location.reload();
+    }
+
+    function checkout() {
+        if(cart.length === 0){
+            alert('Your Cart is Empty!');
+            return;
+        }
+        alert(`Checkout Successful! Your Amount: RM ${total.toFixed(2)}`);
+        localStorage.removeItem('cart');
+        location.reload();
+    }
+</script>
+

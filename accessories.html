@@ -1,0 +1,161 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+    <section class="products">
+    <!-- brush -->
+    <div class="card">
+        <div class="img-box">
+            <img src="syedewa/brush.png" alt="Artist Face Brush" onclick="showDetails('artistDetails')" />
+        </div>
+        <p class="label">ARTIST FACE BRUSH</p>
+    </div>
+
+    <!-- box -->
+    <div class="card">
+        <div class="img-box">
+            <img src="syedewa/signature box.png" alt="Signature Box" onclick="showDetails('signatureDetails')" />
+        </div>
+        <p class="label">SIGNATURE BOX</p>
+    </div>
+</section>
+
+<!-- detail brush -->
+<div id="artistDetails" class="product-detail" style="display:none;">
+    <div class="detail-container">
+        <div class="image-section">
+            <img src="syedewa/brush.png" class="main-img" alt="Artist Face Brush">
+        </div>
+        <div class="info-section">
+            <h2>ARTIST FACE BRUSH</h2>
+
+            <div class="info-box">
+                <h3>MATERIAL:</h3>
+                <ol>
+                    <li>Brush: Synthetic Hair</li>
+                    <li>Handle: Wood</li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <h3>HOW TO USE/DIRECTIONS:</h3>
+                <ol>
+                    <li>Pour a small amount of foundation onto the back of your hand.</li>
+                    <li>Apply in the centre of face and blend outwards using Artist Face Brush.</li>
+                    <li>For touch-ups, lightly dab areas requiring coverage.</li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 79.90</p>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" onclick="addToCart('ARTIST FACE BRUSH', 79.90, 'popupArtist')">Add to Cart</button>
+
+            <!-- Popup Thank You -->
+            <div id="popupArtist" class="popup">
+                <div class="popup-content">
+                    <p>Thankyou for adding ARTIST FACE BRUSH to your cart!</p>
+                    <button class="close-popup" onclick="closePopup('popupArtist')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail" onclick="closeDetail('artistDetails')">BACK</button>
+        </div>
+    </div>
+</div>
+
+<!-- detail box -->
+<div id="signatureDetails" class="product-detail" style="display:none;">
+    <div class="detail-container">
+        <div class="image-section">
+            <img src="syedewa/signature box.png" class="main-img" alt="Signature Box">
+        </div>
+        <div class="info-section">
+            <h2>SIGNATURE BOX</h2>
+
+            <div class="info-box">
+                <h3>DETAILS:</h3>
+                <ul>
+                    <li>SYEDEWA Signature Box: 205mm (L) x 155mm (W) x 60mm (H)</li>
+                    <li>Colour: White</li>
+                    <li>Can fit up to 10 SYEDEWA Minis</li>
+                    <li>Well wrapped with satin ribbon</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 25.00</p>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('SIGNATURE BOX', 25.00, 'popupSignature')">Add to Cart</button>
+
+            <div id="popupSignature" class="popup">
+                <div class="popup-content">
+                    <p>Thankyou for adding SIGNATURE BOX to your cart!</p>
+                    <button class="close-popup" onclick="closePopup('popupSignature')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail" onclick="closeDetail('signatureDetails')">BACK</button>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+</html>
+
+
+<script>
+    function showDetails(detailId) {
+        document.getElementById(detailId).style.display = 'block';
+    }
+    function closeDetail(detailId) {
+        document.getElementById(detailId).style.display = 'none';
+    }
+
+    function addToCart(productName, productPrice, popupId) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({ name: productName, price: productPrice });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        document.getElementById(popupId).style.display = 'flex';
+    }
+
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+    }
+</script>
+
+
