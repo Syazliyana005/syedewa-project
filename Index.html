@@ -1,0 +1,159 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+<div id="images-container">
+		<img src="syedewa/main.png" alt="Main" width= "1550" height= "570">
+        <img src="syedewa/lipstick.png" alt="Lipstick"  width= "300" height= "350" class="falling-image" id="lipstick">
+        <img src="syedewa/butterflyr.png" alt="Butterfly right" class="falling-image" id="butterflyr">
+        <img src="syedewa/butterflyl.png" alt="Butterfly left" class="falling-image" id="butterflyl">
+        <img src="syedewa/butterflyt.png" alt="Butterfly top" class="falling-image" id="butterflyt">
+    </div>
+	
+	<div id="products-container">
+	<section id="lips">
+	<a href="Syedewa Lips.html">
+	<img src="syedewa/lips.png" alt="Lips" width= "300" height= "350">
+	Lips </a>
+	</section>
+	
+	<section id="eyes">
+	<a href="eyes.html">
+	<img src="syedewa/eyes.png" alt="Eyes" width= "300" height= "350">
+	Eyes</a>
+	</section>
+	
+	<section id="face">
+	<a href="Syedewa Face.html">
+	<img src="syedewa/face.png" alt="Face" width= "300" height= "350">
+	Face</a>
+	</section>
+	
+	<section id="accessories">  
+	<a href="accessories.html">
+	<img src="syedewa/accessories.png" alt="Accessories" width= "300" height= "350">
+	Accessories</a>
+	</section>
+	</div>
+	
+	<div id="stage-container">
+		<img src="syedewa/stage.png" alt="Main" width= "1520" height= "750">
+    </div>
+
+<script>
+const lipstick = document.getElementById("lipstick");
+const butterflyL = document.getElementById("butterflyl");
+const butterflyR = document.getElementById("butterflyr");
+const butterflyT = document.getElementById("butterflyt");
+const products = document.getElementById("products-container");
+const stage = document.getElementById("stage-container");
+
+const freezeLeft = -497;
+let isFrozen = false;
+let freezeY = 0;
+let animationStopped = false;
+
+window.addEventListener("scroll", () => {
+
+    /* stop jap lepas stage */
+    const stageBottom = stage.getBoundingClientRect().bottom;
+    if (stageBottom < window.innerHeight * 0.6) {
+        animationStopped = true;
+    }
+
+    if (animationStopped) return;
+
+    const scrollY = window.scrollY;
+    const progress = Math.min(scrollY / 900, 1);
+    const scrollDamping = 0.3;
+
+    let lipX = 0;
+    let lipY = 0;
+    let lipRotate = 0;
+
+    const productTop = products.getBoundingClientRect().top;
+    const triggerPoint = window.innerHeight * 0.55;
+
+    /* reset scroll atas */
+    if (scrollY + 10 < products.offsetTop) {
+        isFrozen = false;
+    }
+
+    /* jatuh */
+    if (!isFrozen) {
+        lipX = progress * freezeLeft;
+        lipY = progress * 350 * scrollDamping;
+    }
+
+    /* freeze kejap */
+    if (!isFrozen && productTop <= triggerPoint) {
+        isFrozen = true;
+        freezeY = lipY;
+    }
+
+    /* lock */
+    if (isFrozen) {
+        lipX = freezeLeft;
+        lipY = freezeY;
+    }
+
+    /* masuk dalam box */
+    if (isFrozen && scrollY > products.offsetTop + 10) {
+        const p = Math.min((scrollY - products.offsetTop - 50) / 100, 1);
+
+        lipX = freezeLeft + p * Math.abs(freezeLeft);
+
+        const targetY = freezeY - 200;
+        lipY = freezeY + p * (targetY - freezeY);
+
+        lipRotate = -25 + p * 25;
+    }
+
+    /* apply */
+    lipstick.style.transform = `
+        translate(-50%, ${lipY}px)
+        translateX(${lipX}px)
+        rotate(${lipRotate}deg)
+    `;
+
+    butterflyL.style.transform = `translate(${lipX * 0.5}px, ${lipY * 0.5}px)`;
+    butterflyR.style.transform = `translate(${lipX * 0.4}px, ${lipY * 0.4}px)`;
+    butterflyT.style.transform = `translate(${lipX * 0.1}px, ${lipY * 0.1}px)`;
+});
+</script>
+</body>
+
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+
+</html>

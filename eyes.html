@@ -1,0 +1,400 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+<section class="products">
+
+    <!-- brow -->
+    <div class="card">
+        <div class="img-box">
+            <img src="syedewa/brow.png" onclick="showDetails('browDetails')">
+        </div>
+        <p class="label">BROW</p>
+    </div>
+
+    <!-- eyeshadow -->
+    <div class="card">
+        <div class="img-box">
+            <img src="syedewa/eyeshadow.png" onclick="showDetails('eyeshadowDetails')">
+        </div>
+        <p class="label">EYESHADOW</p>
+    </div>
+
+    <!-- eyeliner -->
+    <div class="card">
+        <div class="img-box">
+            <img src="syedewa/eyeliner.png" onclick="showDetails('eyelinerDetails')">
+        </div>
+        <p class="label">EYE LINER</p>
+    </div>
+
+</section>
+
+		<!-- brow -->	
+<div id="browDetails" class="product-detail">
+    <div class="detail-container">
+
+        <div class="image-section">
+            <img src="syedewa/brow 2.png" class="main-img">
+        </div>
+
+        <div class="info-section">
+            <h2>BROW SETTING GEL</h2>
+
+            <!-- MATERIAL BOX --> 
+		<div class="info-box"> 
+			<h3>DETAILS </h3>
+			<ol> 
+			<p> Syedewa Brow Setting Gel comes with the new small brush for precise application. 
+			Experience defined, smoother, budge-proof, smudge-proof, 
+			perfect eyebrows—that last throughout the day.</p><br>
+		
+			<p>Get to Know</p>
+			<p>Long-wearing clear gel sets and defines brows without fuss.</p><br> 
+  
+			<p>Bonus</p>
+			</p>Conditions the brow and offers a lustrous and natural look eyebrows.</p><br>
+	
+		</ol> 
+		</div>
+
+            <div class="info-box">
+              <h3>HOW TO USE/DIRECTIONS</h3><br>
+				<ol> 
+				<li>Brush up and out to shape and set the brows.</li><br>
+				</ol>
+            </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 59.00</p>
+            </div>
+
+            <button class="add-to-cart"
+                onclick="addToCart('BROW SETTING GEL',59,'popupBrow')">
+                Add to Cart
+            </button>
+
+            <div id="popupBrow" class="popup">
+                <div class="popup-content">
+                    <p>Thank you for adding BROW SETTING GEL!</p>
+                    <button onclick="closePopup('popupBrow')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail" onclick="closeDetail('browDetails')">BACK</button>
+        </div>
+    </div>
+</div>
+
+
+		<!-- eyeshadow -->
+<div id="eyeshadowDetails" class="product-detail">
+    <div class="detail-container">
+
+        <div class="image-section variants">
+            <div class="variant-item">
+                <img src="syedewa/eyeshadow 1.png"
+                     onclick="openVariant('eyeshadow1Detail')">
+                <p>MADRID</p>
+            </div>
+
+            <div class="variant-item">
+                <img src="syedewa/eyeshadow 2.png"
+                     onclick="openVariant('eyeshadow2Detail')">
+                <p>BANGKOK</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>EYESHADOW</h2>
+            <p><b>CLICK THE SHADE</b></p>
+        </div>
+    </div>
+
+    <button class="close-detail" onclick="closeDetail('eyeshadowDetails')">BACK</button>
+</div>
+
+<!--  eyeshadow madrid  -->
+<div id="eyeshadow1Detail" class="product-detail">
+    <div class="detail-container">
+
+        <div class="image-section">
+            <img src="syedewa/eyeshadow 1.png" class="main-img">
+        </div>
+
+        <div class="info-section">
+            <h2>MADRID SET</h2>
+
+            <div class="info-box">
+			<h3> Details </h3><br>
+               <ol>
+				<p>Get to Know</p>
+			   <p> Introducing our relaunch of SYEDEWA Artist Finish Eyeshadow in MADRID.</p><br>
+
+				<p>This palette is reminiscent of Madrid’s sun-kissed terracotta rooftops, blooming rose gardens,
+				and the golden glow of twilight which captures the essence of the city’s romance and vibrancy.</p><br>
+
+				<p>Feels</P>
+				<p>Comfortable, blend seamlessly with buildable intensity for everyday wear.</p><br>
+				
+				<p>Bonus<p>
+				Each set combines 9 richly-pigmented, 
+				easy-to-blend eyeshadows with matte, cream and glittery finishes.</p><br>
+			
+            </ol>
+        </div>
+		
+		 <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+            
+				<li> Opera - Matte Russet Red </li><br>
+				<li> Bilbao - Matte Coral Beige </li><br>
+				<li> La Rambla - Matte Pale Salmon </li><br>
+				<li> Canal - Matte Cedar Brown </li><br>
+				<li> Sol - Matte Light Pink Beige </li><br>
+				<li> Lista - Matte Pale Pink </li><br>
+				<li> Jarama - Shimmering Rose Gold </li><br>
+				<li> Laguna - Cream Rosy Mauve </li><br>
+				<li> Oporto - Shimmering Copper </li> <br>
+            </p>
+          </ol>
+        </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 89.90</p>
+            </div>
+
+            <button class="add-to-cart"
+                onclick="addToCart('EYESHADOW MADRID',89.9,'popupMadrid')">
+                Add to Cart
+            </button>
+
+            <div id="popupMadrid" class="popup">
+                <div class="popup-content">
+                    <p>Added EYESHADOW MADRID!</p>
+                    <button onclick="closePopup('popupMadrid')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail"
+                onclick="backToEyeshadow()">BACK</button>
+        </div>
+    </div>
+</div>
+
+<!-- eyeshadow bangkok -->
+<div id="eyeshadow2Detail" class="product-detail">
+    <div class="detail-container">
+
+        <div class="image-section">
+            <img src="syedewa/eyeshadow 2.png" class="main-img">
+        </div>
+
+        <div class="info-section">
+            <h2>BANGKOK SET</h2>
+
+            <div class="info-box">
+			<h3> Details </h3><br>
+               <ol>
+				<p>Get to Know</p>
+			   <p> Introducing our relaunch of SYEDEWA Artist Finish Eyeshadow in BANGKOK.</p><br>
+
+				<p>This palette is reminiscent of Madrid’s sun-kissed terracotta rooftops, blooming rose gardens,
+				and the golden glow of twilight which captures the essence of the city’s romance and vibrancy.</p><br>
+
+				<p>Feels</P>
+				<p>Comfortable, blend seamlessly with buildable intensity for everyday wear.</p><br>
+				
+				<p>Bonus<p>
+				Each set combines 9 richly-pigmented, 
+				easy-to-blend eyeshadows with matte, cream and glittery finishes.</p><br>
+			
+            </ol>
+        </div>
+		
+		 <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+            
+				<li> Siam - Matte Cocoa Brown </li><br>
+				<li> Ari - Matte Caramel Brown </li><br>
+				<li> Phaya Thai - Matte Russet </li><br>
+				<li> Rama - Matte Praline </li><br>
+				<li> Wat Arun - Matte Sandy Beige </li><br>
+				<li> Mo Chin - Matte Porcelain </li><br>
+				<li> Samrong - Shimmering Pink Beige </li><br>
+				<li> Asok - Cream Medium Beige </li><br>
+				<li> Ratchada - Shimmering Champagne Shimmer </li> <br>
+            </p>
+          </ol>
+        </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 89.90</p>
+            </div>
+
+            <button class="add-to-cart"
+                onclick="addToCart('EYESHADOW BANGKOK',89.9,'popupBangkok')">
+                Add to Cart
+            </button>
+
+            <div id="popupBangkok" class="popup">
+                <div class="popup-content">
+                    <p>Added EYESHADOW BANGKOK!</p>
+                    <button onclick="closePopup('popupBangkok')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail"
+                onclick="backToEyeshadow()">BACK</button>
+        </div>
+    </div>
+</div>
+
+		<!-- eyeliner -->
+<div id="eyelinerDetails" class="product-detail">
+    <div class="detail-container">
+
+        <div class="image-section">
+            <img src="syedewa/eyeliner.png" class="main-img">
+        </div>
+
+<div class="info-section">
+            <h2>EYE LINER</h2>
+
+            <div class="info-box">
+			<h3> Details </h3><br>
+               <ol>
+				<p>Get to Know</p>
+			   <p> This eyeliner pencil is an easy-glide, waterproof pencil that stays put all day, 
+			   even on the waterline. The range is now available in four shades.</p><br>
+
+				<p>Feels</P>
+				<p>Comfortable, smudge-proof, pigmented, and long-wearing.</p><br>
+				
+				<p>Colour<p>
+				<p> Nude </p><br>
+				
+            </ol>
+        </div>
+		
+		<div class="info-box">
+	 <h3>HOW TO USE/DIRECTIONS</h3><br>
+		<ol>
+		<p><li>Glide the tip along your lash line and/or waterline, starting from the inner corner.</p></li><br>
+		<p><li>Build to your desired thickness.</li><br>
+		</ol>
+		</div> 
+		
+		 <div class="info-box">
+          <h3> More Info </h3><br>
+		  
+		  <p>Tips</p>
+		  <p> Remove the eyeliner using oil-based micellar water.</p><br>
+		  
+          
+            
+          </ol>
+        </div>
+
+            <div class="info-box">
+                <p><b>Price:</b> RM 10.00</p>
+            </div>
+            <button class="add-to-cart"
+                onclick="addToCart('EYE LINER',10,'popupEyeliner')">
+                Add to Cart
+            </button>
+
+            <div id="popupEyeliner" class="popup">
+                <div class="popup-content">
+                    <p>Added EYE LINER!</p>
+                    <button onclick="closePopup('popupEyeliner')">Close</button>
+                </div>
+            </div>
+
+            <button class="close-detail"
+                onclick="closeDetail('eyelinerDetails')">BACK</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class="footer">
+	<a href="information.html">Information  </a>
+	<a href="customerservice.html"> | Customer Service  </a>
+	<a href="login.html">| My Account</a>
+	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
+</footer>
+</html>
+
+<script>
+function showDetails(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function showProductDetails(id) {
+    document.getElementById('eyeshadowDetails').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+}
+
+function closeDetail(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function addToCart(name, price, popupId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById(popupId).style.display = 'flex';
+}
+
+function closePopup(id) {
+    document.getElementById(id).style.display = 'none';
+	
+}
+
+function openVariant(id) {
+ 
+    document.getElementById('eyeshadowDetails').style.display = 'none';
+
+
+    document.getElementById(id).style.display = 'block';
+}
+
+function backToEyeshadow() {
+    document.getElementById('eyeshadow1Detail').style.display = 'none';
+    document.getElementById('eyeshadow2Detail').style.display = 'none';
+    document.getElementById('eyeshadowDetails').style.display = 'block';
+}
+</script>
+
+
