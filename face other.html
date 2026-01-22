@@ -1,0 +1,198 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+ 
+  
+   <!-- Product Detail Section for OTHERS-->
+<div id="othersCategory" class="category-detail">
+  <div class="detail-container">
+    <div class="image-section">
+	
+      <!-- Variant 1 -->
+      <div class="variant-item">
+        <img src="swatch5/otfaceblush.jpg" class="main-img" alt="Others variant 1" onclick="showProductDetails('faceBrush','othersCategory')"/>
+        <p class="label"> Artist Face Brush</p>
+      </div>
+
+	  <!-- Variant 2 -->
+      <div class="variant-item">
+        <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="Others Variant 2" onclick="showProductDetails('faceOil','othersCategory')"/>
+        <p class="label">Artist Fluid Ultra Hydrating Face Oil</p>
+      </div>
+	  </div>
+
+    <div class="info-section">
+      <h1>OTHERS</h1><br>
+      <p><b> CLICK THE PICTURE OF THE CODE </b></p>
+    </div>
+  </div>
+</div>
+
+
+	<div id="faceBrush" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/otfaceblush.jpg" class="main-img" alt="faceblush"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>OTHERS</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+		<p>​​​​​​MATERIAL OF BRUSH</p>
+		<p>1. Brush: Synthetic Hair </p>
+		<p>Handle: Wood</p><br>
+		
+
+     </ol> 
+  </div> 
+  
+
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> Pour a small amount of Artist Fluid Liquid Foundation onto the back of your hand. </p>
+		<p> Apply the foundation in the centre of your face and blend outwards using Artist Face Brush. </p>
+ 		<p> For touch-ups, lightly dab the areas requiring additional coverage.</p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 79.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+ 		<button class="add-to-cart" onclick="addToCart('Face Brush', 79.90, 'thankYouJ')">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouJ" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+
+	     </div> 
+		 
+     </div> 
+  </div>
+  
+	<div id="faceOil" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="faceblush"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>OTHERS</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+
+		<p>Ingredients</p>
+		<p> 1. Hydroxydecyl Ubiquinone (Idebenone): Act as antioxidants and freshens your skin.
+		Make it hydrate, glowing and fresh. </p>
+		<p> 2. Ascorbyl Palmitate (Vitamin C): Even your skintone and protecting skin from 
+		free-radical damage.</p>
+     </ol> 
+  </div> 
+  
+
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> 1. Use one to two drops on bare skin as a prep before makeup application for smooth and dewy skin </p>
+		<p> 2. Combine few drops with foundation to improve make up application and give the complexion a smooth, dewy appearance.  </p>
+ 		<p> Add a few drops with moisturizer at night to boost hydration up to 24 hours. </p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 89.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+ 		<button class="add-to-cart" onclick="addToCart('Face Oil', 89.90, 'thankYouPopup')">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+
+	     </div> 
+		 
+     </div> 
+  </div>
+	
+ <footer>
+ 
+ </footer>
+ 
+ <script>
+    // Show product details when an image is clicked
+    function showDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Show specific product details when a variant image is clicked
+    function showProductDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Close the product details section
+    function closeDetail(detailId) {
+        document.getElementById(detailId).style.display = "none";
+    }
+	
+	// Function to show the "Thank You" popup when Add to Cart is clicked
+    function addToCart() {
+         document.getElementById("thankYouPopup").style.display = "flex"; // Show popup
+    }
+
+    // Function to close the "Thank You" popup
+    function closePopup() {
+        document.getElementById("thankYouPopup").style.display = "none"; // Hide popup
+    }
+	
+ </script>
+</body>
+</html>
