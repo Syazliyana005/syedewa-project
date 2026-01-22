@@ -1,0 +1,145 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+  <section class="products">
+
+    <!-- Face Mist -->
+    <div class="card">
+      <div class="img-box">
+        <!-- Face Mist -->
+		<img src="swatch5/facemist.jpg" alt="FACEMIST" onclick="showDetails('facemistDetails')" />
+      </div>
+      <p class="label">FACE MIST</p>
+    </div>
+
+  </section>
+  
+  
+  
+   <!-- Product Detail Section for FACEMIST-->
+  <div id="facemistDetails" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/facemist.jpg" class="main-img" alt="facemist"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>FACE MIST</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+		<p>Get to know</p>
+		<p>A gentle mist that locks makeup in place while absorbing excess oil on the skin's surface and 
+		controlling shine for an ultra-matte finish that lasts up to 8 hours. </p><br>
+
+		<p>Feels</p>
+		<p>Lightweight. Mattify. Suitable for all skin types.</p><br>
+
+		<p>Colour<p>
+		<p>Milky white.</p></br>
+		
+		<p>Volume</p>
+		<p>80ml per bottle.</p></br>
+
+		<p>Ingredients</p>
+		<p>Aqua, Dimethicone/Vinyl Dimenthicone Crosspolymer, Glycerin, Propylene Glycol, Dimethicone, Trimethylsiloxysilicate, 1,2-Hexanediol, Butylene Glycol, 
+		Phenoxyethanol, Poloxamer 188, Poloxamer 338, C12-14 Sec-Pareth-7, Triethylene Glycol, SodiumBenzoate,
+		Centella Asiatica Extract, Citric Acid, Xanthan Gum, Honey Extract, Citrullus Lanatus Fruit Extract, 
+		Garcinia Mangostana Fruit Extract, Cucumis Sativus Fruit Extract, Carica Papaya Fruit Extract. </p>
+     </ol> 
+  </div> 
+  
+  
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> Spray generously and evenly onto the face, keeping eyes and mouth closed.</p>
+		<p> Use before, during and/or after makeup application. </p>
+ 		<p> Wear it alone to keep shine at bay on makeup-free days.</p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 89.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+ 
+	     </div> 
+		 
+     </div> 
+  </div>
+
+ <footer>
+ 
+ </footer>
+
+  <script>
+    // Show product details when an image is clicked
+    function showDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Show specific product details when a variant image is clicked
+    function showProductDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Close the product details section
+    function closeDetail(detailId) {
+        document.getElementById(detailId).style.display = "none";
+    }
+	
+	// Function to show the "Thank You" popup when Add to Cart is clicked
+    function addToCart() {
+         document.getElementById("thankYouPopup").style.display = "flex"; // Show popup
+    }
+
+    // Function to close the "Thank You" popup
+    function closePopup() {
+        document.getElementById("thankYouPopup").style.display = "none"; // Hide popup
+    }
+	
+ </script>
+</body>
+</html>
