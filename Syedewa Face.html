@@ -28,76 +28,82 @@
 
 	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
 
-  <section class="products">
-  
-    <!-- Artist Powder -->
-    <div class="card">
-      <div class="img-box">
-        <img src="swatch5/pd1.jpg" alt="ARTIST POWDER" onclick="showDetails('browDetails')" />
-      </div>
-      <p class="label">ARTIST POWDER</p>
-    </div>
+<section class="products">
 
-    <!-- Artist Blush -->
-    <div class="card">
-      <div class="img-box">
-        <!-- Artist Blush -->
-		<img src="swatch5/faceblush1.jpg" alt="ARTIST BLUSH" onclick="showDetails('blushDetails')" />
-      </div>
-      <p class="label">ARTIST BLUSH</p>
+  <!-- FACE CATEGORY -->
+  <a href="face powder.html" class="card">
+  <div class="card">
+    <div class="img-box">
+      <img src="swatch5/pd1.jpg" onclick="showCategory('powderCategory')">
     </div>
+    <p class="label">ARTIST POWDER</p>
+  </div>
+  </a>
 
-    <!-- Face Mist -->
-    <div class="card">
-      <div class="img-box">
-        <img src="swatch5/facemist.jpg" alt="Face Mist" onclick="showDetails('facemistDetails')" />
-      </div>
-      <p class="label">FACE MIST</p>
+<a href="face blush.html" class="card">
+  <div class="card">
+    <div class="img-box">
+      <img src="swatch5/faceblush1.jpg" onclick="showCategory('blushCategory')">
     </div>
-	
-	    <!-- Others -->
-    <div class="card">
-      <div class="img-box">
-        <img src="swatch5/ot.jpg" alt="Others" onclick="showDetails('othersDetails')" />
-      </div>
-      <p class="label">OTHERS</p>
+    <p class="label">ARTIST BLUSH</p>
+  </div>
+  </a>
+
+<a href="face mist.html" class="card">
+  <div class="card">
+    <div class="img-box">
+      <img src="swatch5/facemist.jpg" onclick="showCategory('facemistCategory')">
     </div>
-  </section>
+    <p class="label">FACE MIST</p>
+  </div>
+  </a>
+
+<a href="face other.html" class="card">
+  <div class="card">
+    <div class="img-box">
+      <img src="swatch5/ot.jpg" onclick="showCategory('othersCategory')">
+    </div>
+    <p class="label">OTHERS</p>
+  </div>
+  </a>
+
+</section>
+
   
   
   
 
 <!-- ARTIST POWDER -->
-<div id="browDetails" class="product-detail">
+<div id="powderCategory" class="category-detail">
   <div class="detail-container">
     <div class="image-section">
       <!-- Variant 1 -->
       <div class="variant-item">
-        <img src="swatch5/pd100.jpg" class="main-img" alt="Face Blush Variant 1" onclick="showProductDetails('powder100Detail')"/>
+        <img src="swatch5/pd100.jpg" class="main-img" alt="Face Blush Variant 1" onclick="showProductDetails('powder100Detail','powderCategory')"/>
         <p class="label">[100] Artist Finish Powder Foundation</p>
       </div>
 
 	  <!-- Variant 2 -->
       <div class="variant-item">
-        <img src="swatch5/pd150.jpg" class="main-img" alt="Face Blush Variant 2" onclick="showProductDetails('powder150Detail')"/>
+        <img src="swatch5/pd150.jpg" class="main-img" alt="Face Blush Variant 2" onclick="showProductDetails('powder150Detail','powderCategory')"/>
         <p class="label">[150] Artist Finish Powder Foundation</p>
       </div>
 	  
       <!-- Variant 3 -->
       <div class="variant-item">
-        <img src="swatch5/pd170.jpg" class="main-img" alt="Face Blush Variant 3" onclick="showProductDetails('powder170Detail')"/>
+        <img src="swatch5/pd170.jpg" class="main-img" alt="Face Blush Variant 3" onclick="showProductDetails('powder170Detail','powderCategory')"/>
         <p class="label">[170] Artist Finish Powder Foundation</p>
       </div>
 	  
 	  <!-- Variant 4 -->
       <div class="variant-item">
-        <img src="swatch5/pd190.jpg" class="main-img" alt="Face Blush Variant 4" onclick="showProductDetails('powder190Detail')"/>
+        <img src="swatch5/pd190.jpg" class="main-img" alt="Face Blush Variant 4" onclick="showProductDetails('powder190Detail','powderCategory')"/>
         <p class="label">[190] Artist Finish Powder Foundation</p>
       </div>
 	  
 	  <!-- Variant 5 -->
       <div class="variant-item">
-        <img src="swatch5/pd230.jpg" class="main-img" alt="Face Blush Variant 5" onclick="showProductDetails('powder230Detail')"/>
+        <img src="swatch5/pd230.jpg" class="main-img" alt="Face Blush Variant 5" onclick="showProductDetails('powder230Detail','powderCategory')"/>
         <p class="label">[230] Artist Finish Powder Foundation</p>
       </div>
     </div>
@@ -108,6 +114,7 @@
     </div>
   </div>
   
+
 
   <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
   <div id="powder100Detail" class="product-detail">
@@ -174,8 +181,6 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-		
-		<button class="close-detail" onclick="closeDetail('powder100Detail')">BACK</button>
 
       </div>
     </div>
@@ -247,7 +252,6 @@
                     </div>
                 </div>
 		
-		<button class="close-detail" onclick="closeDetail('powder150Detail')">BACK</button>
       </div>
     </div>
   </div>
@@ -316,8 +320,7 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-		
-		<button class="close-detail" onclick="closeDetail('powder170Detail')">BACK</button>
+	
       </div>
     </div>
   </div>
@@ -388,7 +391,6 @@
                     </div>
                 </div>
 		
-		<button class="close-detail" onclick="closeDetail('powder190Detail')">BACK</button>
       </div>
     </div>
   </div>
@@ -458,8 +460,6 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-		
-		<button class="close-detail" onclick="closeDetail('powder230Detail')">BACK</button>
       </div>
     </div>
   </div>
@@ -467,24 +467,24 @@
 
 
  <!-- Product Detail Section for Eyeshadow -->
-<div id="blushDetails" class="product-detail">
+<div id="blushCategory" class="category-detail">
   <div class="detail-container">
     <div class="image-section">
       <!-- Variant 1 -->
       <div class="variant-item">
-        <img src="swatch5/athens.jpg" class="main-img" alt="Face Blush Variant 1" onclick="showProductDetails('blushAthensDetail')" />
+        <img src="swatch5/athens.jpg" class="main-img" alt="Face Blush Variant 1" onclick="showProduct('blushAthens','blushCategory')" />
         <p class="label">ATHENS</p>
       </div>
 
 	  <!-- Variant 2 -->
       <div class="variant-item">
-        <img src="swatch5/anice.jpg" class="main-img" alt="Face Blush Variant 2" onclick="showProductDetails('blushNiceDetail')" />
+        <img src="swatch5/anice.jpg" class="main-img" alt="Face Blush Variant 2" onclick="showProduct('blushNice','blushCategory')" />
         <p class="label">NICE</p>
       </div>
 	  
       <!-- Variant 3 -->
       <div class="variant-item">
-        <img src="swatch5/argentina.jpg" class="main-img" alt="Face Blush Variant 3" onclick="showProductDetails('blushArgentinaDetail')" />
+        <img src="swatch5/argentina.jpg" class="main-img" alt="Face Blush Variant 3" onclick="showProduct('blushArgentina','blushCategory')" />
         <p class="label">ARGENTINA</p>
       </div>
     </div>
@@ -494,13 +494,11 @@
       <p><b> CLICK THE PICTURE OF THE CODE </b></p>
     </div>
   </div>
-  
-  <!-- BACK button to go back to the previous section -->
-  <button class="close-detail" onclick="closeDetail('blushDetails')">BACK</button>
+ 
 </div>
 
   <!-- Detailed Product Information for FACE BLUSH (ATHENS) -->
-  <div id="blushAthensDetail" class="product-detail">
+  <div id="blushAthens" class="product-detail">
     <div class="detail-container">
       <div class="image-section">
         <img src="swatch5/athens.jpg" class="main-img" alt="Face Blush Variant 1"/>
@@ -557,13 +555,12 @@
                     </div>
                 </div>
 		
-        <button class="close-detail" onclick="closeDetail('blushAthensDetail')">BACK</button>
       </div>
     </div>
   </div>
 
   <!-- Detailed Product Information for BLUSH (NICE) -->
-  <div id="blushNiceDetail" class="product-detail">
+  <div id="blushNice" class="product-detail">
     <div class="detail-container">
       <div class="image-section">
         <img src="swatch5/anice.jpg" class="main-img" alt="Eyeshadow Variant 2"/>
@@ -618,13 +615,12 @@
                     </div>
                 </div>
         
-        <button class="close-detail" onclick="closeDetail('blushNiceDetail')">BACK</button>
       </div>
     </div>
   </div>
   
     <!-- Detailed Product Information for BLUSH (ARGENTINA) -->
-  <div id="blushArgentinaDetail" class="product-detail">
+  <div id="blushArgentina" class="product-detail"> 
     <div class="detail-container">
       <div class="image-section">
         <img src="swatch5/argentina.jpg" class="main-img" alt="Eyeshadow Variant 2"/>
@@ -678,8 +674,7 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-        
-        <button class="close-detail" onclick="closeDetail('blushArgentinaDetail')">BACK</button>
+       
       </div>
     </div>
   </div>
@@ -687,7 +682,7 @@
   
   
    <!-- Product Detail Section for FACEMIST-->
-  <div id="facemistDetails" class="product-detail">
+	<div id="facemistCategory" class="category-detail">
      <div class="detail-container"> <div class="image-section"> 
      <img src="swatch5/facemist.jpg" class="main-img" alt="facemist"> 
      </div>
@@ -748,7 +743,7 @@
                     </div>
                 </div>
 	
-		<button class="close-detail" onclick="closeDetail('facemistDetails')"> BACK </button> 
+		<button onclick="backToCategory()">BACK</button>
 	     </div> 
 		 
      </div> 
@@ -757,19 +752,19 @@
    <!-- Product Detail Section for OTHERS -->
 
 
-<div id="othersDetails" class="product-detail">
+<div id="othersCategory" class="category-detail">
   <div class="detail-container">
     <div class="image-section">
 	
       <!-- Variant 1 -->
       <div class="variant-item">
-        <img src="swatch5/otfaceblush.jpg" class="main-img" alt="Others variant 1" onclick="showProductDetails('faceblushDetails')"/>
+        <img src="swatch5/otfaceblush.jpg" class="main-img" alt="Others variant 1" onclick="showProductDetails('faceBrush','othersCategory')"/>
         <p class="label"> Artist Face Brush</p>
       </div>
 
 	  <!-- Variant 2 -->
       <div class="variant-item">
-        <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="Others Variant 2" onclick="showProductDetails('oilDetails')"/>
+        <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="Others Variant 2" onclick="showProductDetails('faceOil','othersCategory')"/>
         <p class="label">Artist Fluid Ultra Hydrating Face Oil</p>
       </div>
 	  </div>
@@ -779,14 +774,11 @@
       <p><b> CLICK THE PICTURE OF THE CODE </b></p>
     </div>
   </div>
-  
-  <!-- BACK button to go back to the previous section -->
-	<button class="close-detail" onclick="closeDetail('othersDetails')">
-    BACK </button>
+
 	</div>
 
 
-  <div id="faceblushDetails" class="product-detail">
+	<div id="faceBrush" class="product-detail">
      <div class="detail-container"> <div class="image-section"> 
      <img src="swatch5/otfaceblush.jpg" class="main-img" alt="faceblush"> 
      </div>
@@ -833,15 +825,13 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-	
-		<button class="close-detail" onclick="closeDetail('faceblushDetails')"> BACK </button>
 
 	     </div> 
 		 
      </div> 
   </div>
   
-  <div id="oilDetails" class="product-detail">
+	<div id="faceOil" class="product-detail">
      <div class="detail-container"> <div class="image-section"> 
      <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="faceblush"> 
      </div>
@@ -889,88 +879,119 @@
                         <button class="close-popup" onclick="closePopup()">Close</button>
                     </div>
                 </div>
-	
-		<button class="close-detail" onclick="closeDetail('oilDetails')"> BACK </button>
 
 	     </div> 
 		 
      </div> 
   </div>
-
-	<button class="close-detail" onclick="closeDetail('othersDetails')">
-		BACK
-	</button>
 	
  <footer>
  
  </footer>
 
 <script>
+let currentCategory = null;
+let currentProduct = null;
 
-function showDetails(id) {
-    var allDetails = document.querySelectorAll('.product-detail');
-    allDetails.forEach(function(detail) {
-        detail.style.display = 'none';
-    });
-    
-    var element = document.getElementById(id);
-    if (element) {
-        element.style.display = 'block';
-    }
+// Hide all categories and details
+function hideAll() {
+  document.querySelectorAll('.category-detail, .product-detail').forEach(el => el.style.display = 'none');
+  document.querySelector('.products').style.display = 'flex'; // Ensure main products show
 }
 
-function showProductDetails(id) {
-
-    showDetails(id);
+// Show category
+function showCategory(categoryId) {
+  try {
+    hideAll();
+    currentCategory = categoryId;
+    const el = document.getElementById(categoryId);
+    if (el) {
+      el.style.display = 'block';
+      console.log('Showing category:', categoryId); // Debug log
+    } else {
+      console.error('Category not found:', categoryId);
+    }
+  } catch (e) {
+    console.error('Error in showCategory:', e);
+  }
 }
 
-function closeDetail(id) {
-    console.log("Closing detail:", id);
-    var element = document.getElementById(id);
-    if (element) {
-        element.style.display = 'none';
+// Show product details
+function showProductDetails(productId, categoryId) {
+  try {
+    hideAll();
+    currentCategory = categoryId;
+    currentProduct = productId;
+    const el = document.getElementById(productId);
+    if (el) {
+      el.style.display = 'block';
+      console.log('Showing product:', productId); // Debug log
+    } else {
+      console.error('Product not found:', productId);
     }
-    
-
-    if (id === 'faceblushDetails' || id === 'oilDetails') {
-        setTimeout(function() {
-            var others = document.getElementById('othersDetails');
-            if (others) {
-                others.style.display = 'block';
-            }
-        }, 10);
-    }
+  } catch (e) {
+    console.error('Error in showProductDetails:', e);
+  }
 }
 
-function addToCart(name, price, popupId) {
-    console.log('Adding to cart:', name, price, 'Popup ID:', popupId);
-    
-    var cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push({ name: name, price: price, quantity: 1 });
+// Alias for consistency
+function showProduct(productId, categoryId) {
+  showProductDetails(productId, categoryId);
+}
+
+// Back to category
+function backToCategory() {
+  hideAll();
+  if (currentCategory) {
+    const el = document.getElementById(currentCategory);
+    if (el) el.style.display = 'block';
+  }
+}
+
+// Back to main products
+function backToMain() {
+  hideAll();
+  document.querySelector('.products').style.display = 'flex';
+}
+
+// Add to cart
+function addToCart(productName, price, popupId) {
+  try {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: productName, price: price, quantity: 1 });
     localStorage.setItem('cart', JSON.stringify(cart));
-    
-    var popup = document.getElementById(popupId);
-    if (popup) {
-        popup.style.display = 'flex';
-    }
+    const popup = document.getElementById(popupId);
+    if (popup) popup.style.display = 'block';
+    console.log('Added to cart:', productName); // Debug log
+  } catch (e) {
+    console.error('Error adding to cart:', e);
+  }
 }
 
+// Close popup
 function closePopup() {
-    var allPopups = document.querySelectorAll('.popup');
-    allPopups.forEach(function(popup) {
-        popup.style.display = 'none';
-    });
+  document.querySelectorAll('.popup').forEach(p => p.style.display = 'none');
 }
+
+// Close detail (kept for compatibility, but use backToMain instead)
+function closeDetail(detailId) {
+  const el = document.getElementById(detailId);
+  if (el) el.style.display = 'none';
+  backToCategory();
+}
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', () => {
+  hideAll();
+  // Add touch support for mobile
+  document.querySelectorAll('img[onclick], .card img').forEach(img => {
+    img.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      const onclick = img.getAttribute('onclick');
+      if (onclick) eval(onclick); // Safer: parse and call function
+    });
+  });
+});
 </script>
-
-
 </body>
-<footer class="footer">
-	<a href="information.html">Information  </a>
-	<a href="customerservice.html"> | Customer Service  </a>
-	<a href="login.html">| My Account</a>
-	<p>Copyright © 2026 Syedewa Group Sdn Bhd (1280376-V).  All Rights Reserved.
-</footer>
-
 </html>
-
