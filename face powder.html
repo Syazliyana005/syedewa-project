@@ -1,0 +1,816 @@
+<html>
+<head>
+    
+    <title>Syedewa Cosmetics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="Syedewa Lips.html">Lips</a>
+    <a href="eyes.html">Eyes</a>
+    <a href="Syedewa Face.html">Face</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="information.html">About Us</a>
+	
+    <a href="location.html">
+        <img src="syedewa/store.png" alt="Store Location" style="height: 25px;"></a>
+		
+		<a href="search.html">
+        <img src="syedewa/search.png" alt="Search" style="height: 25px;"></a>
+		
+		<a href="login.html">
+        <img src="syedewa/user.png" alt="User" style="height: 25px;"></a>
+		
+		<a href="addtocart.html">
+        <img src="syedewa/shopping.png" alt="Add to cart" style="height: 25px;"></a>
+</nav>
+
+	<h1><a href="index.html">SYEDEWA COSMETICS</a></h1>
+
+  <section class="products">
+  
+    <!-- Artist Powder -->
+    <div class="card">
+      <div class="img-box">
+        <img src="swatch5/pd1.jpg" alt="ARTIST POWDER" onclick="showDetails('browDetails')" />
+      </div>
+      <p class="label">ARTIST POWDER</p>
+    </div>
+  </section>
+  
+  
+  
+
+<!-- ARTIST POWDER -->
+<div id="browDetails" class="product-detail">
+  <div class="detail-container">
+    <div class="image-section">
+      <!-- Variant 1 -->
+      <div class="variant-item">
+        <img src="swatch5/pd100.jpg" class="main-img" alt="Face Blush Variant 1" onclick="showProductDetails('powder100Detail')"/>
+        <p class="label">[100] Artist Finish Powder Foundation</p>
+      </div>
+
+	  <!-- Variant 2 -->
+      <div class="variant-item">
+        <img src="swatch5/pd150.jpg" class="main-img" alt="Face Blush Variant 2" onclick="showProductDetails('powder150Detail')"/>
+        <p class="label">[150] Artist Finish Powder Foundation</p>
+      </div>
+	  
+      <!-- Variant 3 -->
+      <div class="variant-item">
+        <img src="swatch5/pd170.jpg" class="main-img" alt="Face Blush Variant 3" onclick="showProductDetails('powder170Detail')"/>
+        <p class="label">[170] Artist Finish Powder Foundation</p>
+      </div>
+	  
+	  <!-- Variant 4 -->
+      <div class="variant-item">
+        <img src="swatch5/pd190.jpg" class="main-img" alt="Face Blush Variant 4" onclick="showProductDetails('powder190Detail')"/>
+        <p class="label">[190] Artist Finish Powder Foundation</p>
+      </div>
+	  
+	  <!-- Variant 5 -->
+      <div class="variant-item">
+        <img src="swatch5/pd230.jpg" class="main-img" alt="Face Blush Variant 5" onclick="showProductDetails('powder230Detail')"/>
+        <p class="label">[230] Artist Finish Powder Foundation</p>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h1>FACE BLUSH</h1><br>
+      <p><b> CLICK THE PICTURE OF THE CODE </b></p>
+    </div>
+  </div>
+  
+</div>
+
+  <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
+  <div id="powder100Detail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/pd100.jpg" class="main-img" alt="Face Blush Variant 1">
+      </div>
+      <div class="info-section">
+        <h2>[100] Artist Finish Powder Foundation</h2><br>
+        
+        <!-- MATERIAL BOX -->
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p> SYEDEWA Artist Finish Powder Foundation has a natural matte finish
+			   texture with medium coverage but buildable to full.</p><br>
+				
+				<p>INGREDIENTS<p>
+				Mica, Talc, Boron Nitride, Titanium Dioxide, Silica, Ethylhexyl Palmitate, Dimethicone,
+				Triethoxycaprylysilane, Hydrogenated Polyisobutene, Diisostearyl Malate, Trimethylsiloxysilicate,
+				Aluminum Hydroxide, Phenoxyethanol, Hydrogen Dimethicone, Tocopheryl Acetate, Ascorbyl Tetraisopalmitate,
+				Camellia Japonica Seed Oil, RosaCanina Fruit Oil, Argania Spinosa Kernel Oil, Niacinamide, Triethylene Glycol
+
+				May Contain: CI 77492, CI 77491, CI 77499</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+				<li> [100] Fair Skin Tone.   </li><br>
+            </p>
+          </ol>
+        </div>
+        
+			<!-- DIRECTIONS BOX -->
+	<div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p>1. Prep your skin with a basic skincare routine.</p>
+		<p>2. Apply powder with sponge applicator included in the compact. </p>
+ 		<p>3. Start in the center of the face, blending outward. Build coverage as needed.</p><br>
+		<p>4. For dry use only.</p><br>
+		<p> We recommend the sponge for even coverage. For medium to full coverage, apply using the SYEDEWA Face Brush
+		and build the desired coverage for a flawless, blurred finish.</p>
+		</ol>
+		</div> 
+		
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 89.90</p><br>
+        </div>
+		
+		 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+		
+
+      </div>
+    </div>
+  </div>
+  
+    <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
+  <div id="powder150Detail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/pd150.jpg" class="main-img" alt="Face Blush Variant 1">
+      </div>
+      <div class="info-section">
+        <h2>[150] Artist Finish Powder Foundation</h2><br>
+        
+        <!-- MATERIAL BOX -->
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p> SYEDEWA Artist Finish Powder Foundation has a natural matte finish
+			   texture with medium coverage but buildable to full.</p><br>
+				
+				<p>INGREDIENTS<p>
+				Mica, Talc, Boron Nitride, Titanium Dioxide, Silica, Ethylhexyl Palmitate, Dimethicone,
+				Triethoxycaprylysilane, Hydrogenated Polyisobutene, Diisostearyl Malate, Trimethylsiloxysilicate,
+				Aluminum Hydroxide, Phenoxyethanol, Hydrogen Dimethicone, Tocopheryl Acetate, Ascorbyl Tetraisopalmitate,
+				Camellia Japonica Seed Oil, RosaCanina Fruit Oil, Argania Spinosa Kernel Oil, Niacinamide, Triethylene Glycol
+
+				May Contain: CI 77492, CI 77491, CI 77499</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+				<li> [150] Light to Medium Skin Tone.  </li><br>
+            </p>
+          </ol>
+        </div>
+        
+			<!-- DIRECTIONS BOX -->
+	<div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p>1. Prep your skin with a basic skincare routine.</p>
+		<p>2. Apply powder with sponge applicator included in the compact. </p>
+ 		<p>3. Start in the center of the face, blending outward. Build coverage as needed.</p><br>
+		<p>4. For dry use only.</p><br>
+		<p> We recommend the sponge for even coverage. For medium to full coverage, apply using the SYEDEWA Face Brush
+		and build the desired coverage for a flawless, blurred finish.</p>
+		</ol>
+		</div> 
+		
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 89.90</p><br>
+        </div>
+		
+		 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+		
+	
+      </div>
+    </div>
+  </div>
+  
+    <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
+  <div id="powder170Detail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/pd170.jpg" class="main-img" alt="Face Blush Variant 1">
+      </div>
+      <div class="info-section">
+        <h2>[170] Artist Finish Powder Foundation</h2><br>
+        
+        <!-- MATERIAL BOX -->
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p> SYEDEWA Artist Finish Powder Foundation has a natural matte finish
+			   texture with medium coverage but buildable to full.</p><br>
+				
+				<p>INGREDIENTS<p>
+				Mica, Talc, Boron Nitride, Titanium Dioxide, Silica, Ethylhexyl Palmitate, Dimethicone,
+				Triethoxycaprylysilane, Hydrogenated Polyisobutene, Diisostearyl Malate, Trimethylsiloxysilicate,
+				Aluminum Hydroxide, Phenoxyethanol, Hydrogen Dimethicone, Tocopheryl Acetate, Ascorbyl Tetraisopalmitate,
+				Camellia Japonica Seed Oil, RosaCanina Fruit Oil, Argania Spinosa Kernel Oil, Niacinamide, Triethylene Glycol
+
+				May Contain: CI 77492, CI 77491, CI 77499</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+				<li> [170] Light to Medium Skin Tone (Neutral-Cool Undertone) </li><br>
+            </p>
+          </ol>
+        </div>
+        
+			<div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p>1. Prep your skin with a basic skincare routine.</p>
+		<p>2. Apply powder with sponge applicator included in the compact. </p>
+ 		<p>3. Start in the center of the face, blending outward. Build coverage as needed.</p><br>
+		<p>4. For dry use only.</p><br>
+		<p> We recommend the sponge for even coverage. For medium to full coverage, apply using the SYEDEWA Face Brush
+		and build the desired coverage for a flawless, blurred finish.</p>
+		</ol>
+		</div>
+		
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 89.90</p><br>
+        </div>
+		
+		 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+		
+      </div>
+    </div>
+  </div>
+  
+    <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
+  <div id="powder190Detail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/pd190.jpg" class="main-img" alt="Face Blush Variant 1">
+      </div>
+      <div class="info-section">
+        <h2>[190] Artist Finish Powder Foundation</h2><br>
+        
+        <!-- MATERIAL BOX -->
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p> SYEDEWA Artist Finish Powder Foundation has a natural matte finish
+			   texture with medium coverage but buildable to full.</p><br>
+				
+				<p>INGREDIENTS<p>
+				Mica, Talc, Boron Nitride, Titanium Dioxide, Silica, Ethylhexyl Palmitate, Dimethicone,
+				Triethoxycaprylysilane, Hydrogenated Polyisobutene, Diisostearyl Malate, Trimethylsiloxysilicate,
+				Aluminum Hydroxide, Phenoxyethanol, Hydrogen Dimethicone, Tocopheryl Acetate, Ascorbyl Tetraisopalmitate,
+				Camellia Japonica Seed Oil, RosaCanina Fruit Oil, Argania Spinosa Kernel Oil, Niacinamide, Triethylene Glycol
+
+				May Contain: CI 77492, CI 77491, CI 77499</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+				<li> [190] Light to Medium Skin Tone (Cool Undertone) </li><br>
+            </p>
+          </ol>
+        </div>
+        
+			<!-- DIRECTIONS BOX -->
+	<div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p>1. Prep your skin with a basic skincare routine.</p>
+		<p>2. Apply powder with sponge applicator included in the compact. </p>
+ 		<p>3. Start in the center of the face, blending outward. Build coverage as needed.</p><br>
+		<p>4. For dry use only.</p><br>
+		<p> We recommend the sponge for even coverage. For medium to full coverage, apply using the SYEDEWA Face Brush
+		and build the desired coverage for a flawless, blurred finish.</p>
+		</ol>
+		</div> 
+		
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 89.90</p><br>
+        </div>
+		
+		 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+		
+      </div>
+    </div>
+  </div>
+  
+    <!-- Detailed Product Information for FACE BLUSH Variant 1 (ATHENS) -->
+  <div id="powder230Detail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/pd230.jpg" class="main-img" alt="Face Blush Variant 1">
+      </div>
+      <div class="info-section">
+        <h2>[230] Artist Finish Powder Foundation</h2><br>
+        
+        <!-- MATERIAL BOX -->
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p> SYEDEWA Artist Finish Powder Foundation has a natural matte finish
+			   texture with medium coverage but buildable to full.</p><br>
+				
+				<p>INGREDIENTS<p>
+				Mica, Talc, Boron Nitride, Titanium Dioxide, Silica, Ethylhexyl Palmitate, Dimethicone,
+				Triethoxycaprylysilane, Hydrogenated Polyisobutene, Diisostearyl Malate, Trimethylsiloxysilicate,
+				Aluminum Hydroxide, Phenoxyethanol, Hydrogen Dimethicone, Tocopheryl Acetate, Ascorbyl Tetraisopalmitate,
+				Camellia Japonica Seed Oil, RosaCanina Fruit Oil, Argania Spinosa Kernel Oil, Niacinamide, Triethylene Glycol
+
+				May Contain: CI 77492, CI 77491, CI 77499</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+				<li> [230] Medium - Warm Skin Tone. </li><br>
+            </p>
+          </ol>
+        </div>
+
+	<!-- DIRECTIONS BOX -->
+	<div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p>1. Prep your skin with a basic skincare routine.</p>
+		<p>2. Apply powder with sponge applicator included in the compact. </p>
+ 		<p>3. Start in the center of the face, blending outward. Build coverage as needed.</p><br>
+		<p>4. For dry use only.</p><br>
+		<p> We recommend the sponge for even coverage. For medium to full coverage, apply using the SYEDEWA Face Brush
+		and build the desired coverage for a flawless, blurred finish.</p>
+		</ol>
+		</div> 
+		
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 89.90</p><br>
+        </div>
+		
+		 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+		
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Detailed Product Information for BLUSH (NICE) -->
+  <div id="blushNiceDetail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/anice.jpg" class="main-img" alt="Eyeshadow Variant 2"/>
+      </div>
+      <div class="info-section">
+        <h2>FACE BLUSH: NICE</h2><br>
+        
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p>Introducing our new release of Syedewa Artist Finish Blush: Nice.</p><br>
+
+				<p>Take your glow global with Argentina — a sultry palette that blurs the line 
+				between blush and bronzer. Featuring 4 all-new sun-kissed tones. </p><br>
+
+				<p>Feels</P>
+				<p>Comfortable, blend seamlessly with buildable intensity for everyday wear.</p><br>
+				
+            <p>Bonus<p>
+			Each set combines 4 richly-pigmented, easy-to-blend blush with matte
+			and cream finishes.</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+			<li> Loria: Matte Soft, Rosy Taupe </li><br>
+			<li> Venezuela: Matte Peach Brown </li><br>
+			<li>Peru: Matte Deep Peachy Beige </li><br>
+			<li> Lavelle: Cream Nude Brownish Peach</li><br>		
+            </p>
+          </ol>
+        </div>
+        
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 109.90</p><br>
+        </div>
+		
+	 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+        
+      </div>
+    </div>
+  </div>
+  
+    <!-- Detailed Product Information for BLUSH (ARGENTINA) -->
+  <div id="blushArgentinaDetail" class="product-detail">
+    <div class="detail-container">
+      <div class="image-section">
+        <img src="swatch5/argentina.jpg" class="main-img" alt="Eyeshadow Variant 2"/>
+      </div>
+      <div class="info-section">
+        <h2>FACE BLUSH: ARGENTINA</h2><br>
+        
+        <div class="info-box">
+          <h3>DETAILS</h3>
+          <ol>
+            <p>Get to Know</p>
+			   <p>Introducing our new release of Syedewa Artist Finish Blush: Argentina.</p><br>
+
+				<p>Take your glow global with Argentina — a sultry palette that blurs the line 
+				between blush and bronzer. Featuring 4 all-new sun-kissed tones. </p><br>
+
+				<p>Feels</P>
+				<p>Comfortable, blend seamlessly with buildable intensity for everyday wear.</p><br>
+				
+            <p>Bonus<p>
+			Each set combines 4 richly-pigmented, easy-to-blend blush with matte
+			and cream finishes.</p><br>
+			
+          </ol>
+        </div>
+
+        <!-- DIRECTIONS BOX -->
+        <div class="info-box">
+          <h3> Colour </h3><br>
+		  <p>
+          <ol>
+			<li> Loria: Matte Soft, Rosy Taupe </li><br>
+			<li> Venezuela: Matte Peach Brown </li><br>
+			<li>Peru: Matte Deep Peachy Beige </li><br>
+			<li> Lavelle: Cream Nude Brownish Peach</li><br>		
+            </p>
+          </ol>
+        </div>
+        
+        <div class="info-box">
+          <br><p><b>Price:</b> RM 109.90</p><br>
+        </div>
+		
+	 <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   <!-- Product Detail Section for FACEMIST-->
+  <div id="facemistDetails" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/facemist.jpg" class="main-img" alt="facemist"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>FACE MIST</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+		<p>Get to know</p>
+		<p>A gentle mist that locks makeup in place while absorbing excess oil on the skin's surface and 
+		controlling shine for an ultra-matte finish that lasts up to 8 hours. </p><br>
+
+		<p>Feels</p>
+		<p>Lightweight. Mattify. Suitable for all skin types.</p><br>
+
+		<p>Colour<p>
+		<p>Milky white.</p></br>
+		
+		<p>Volume</p>
+		<p>80ml per bottle.</p></br>
+
+		<p>Ingredients</p>
+		<p>Aqua, Dimethicone/Vinyl Dimenthicone Crosspolymer, Glycerin, Propylene Glycol, Dimethicone, Trimethylsiloxysilicate, 1,2-Hexanediol, Butylene Glycol, 
+		Phenoxyethanol, Poloxamer 188, Poloxamer 338, C12-14 Sec-Pareth-7, Triethylene Glycol, SodiumBenzoate,
+		Centella Asiatica Extract, Citric Acid, Xanthan Gum, Honey Extract, Citrullus Lanatus Fruit Extract, 
+		Garcinia Mangostana Fruit Extract, Cucumis Sativus Fruit Extract, Carica Papaya Fruit Extract. </p>
+     </ol> 
+  </div> 
+  
+  
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> Spray generously and evenly onto the face, keeping eyes and mouth closed.</p>
+		<p> Use before, during and/or after makeup application. </p>
+ 		<p> Wear it alone to keep shine at bay on makeup-free days.</p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 89.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+	 
+	     </div> 
+		 
+     </div> 
+  </div>
+  
+   <!-- Product Detail Section for OTHERS -->
+
+
+<div id="othersDetails" class="product-detail">
+  <div class="detail-container">
+    <div class="image-section">
+	
+      <!-- Variant 1 -->
+      <div class="variant-item">
+        <img src="swatch5/otfaceblush.jpg" class="main-img" alt="Others variant 1" onclick="showProductDetails('faceblushDetails')"/>
+        <p class="label">
+Artist Face Brush</p>
+      </div>
+
+	  <!-- Variant 2 -->
+      <div class="variant-item">
+        <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="Others Variant 2" onclick="showProductDetails('oilDetails')"/>
+        <p class="label">Artist Fluid Ultra Hydrating Face Oil</p>
+      </div>
+	  </div>
+
+    <div class="info-section">
+      <h1>OTHERS</h1><br>
+      <p><b> CLICK THE PICTURE OF THE CODE </b></p>
+    </div>
+  </div>
+  
+  <!-- BACK button to go back to the previous section -->
+  <button class="close-detail" onclick="closeDetail('eyeshadowDetails')">BACK</button>
+</div>
+
+  <div id="faceblushDetails" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/otfaceblush.jpg" class="main-img" alt="faceblush"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>OTHERS</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+		<p>​​​​​​MATERIAL OF BRUSH</p>
+		<p>1. Brush: Synthetic Hair </p>
+		<p>Handle: Wood</p><br>
+		
+		<p>Feels</p>
+		<p>Lightweight. Mattify. Suitable for all skin types.</p><br>
+
+		<p>Colour<p>
+		<p>Milky white.</p></br>
+		
+		<p>Volume</p>
+		<p>80ml per bottle.</p></br>
+
+		<p>Ingredients</p>
+		<p>Aqua, Dimethicone/Vinyl Dimenthicone Crosspolymer, Glycerin, Propylene Glycol, Dimethicone, Trimethylsiloxysilicate, 1,2-Hexanediol, Butylene Glycol, 
+		Phenoxyethanol, Poloxamer 188, Poloxamer 338, C12-14 Sec-Pareth-7, Triethylene Glycol, SodiumBenzoate,
+		Centella Asiatica Extract, Citric Acid, Xanthan Gum, Honey Extract, Citrullus Lanatus Fruit Extract, 
+		Garcinia Mangostana Fruit Extract, Cucumis Sativus Fruit Extract, Carica Papaya Fruit Extract. </p>
+     </ol> 
+  </div> 
+  
+
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> Pour a small amount of Artist Fluid Liquid Foundation onto the back of your hand. </p>
+		<p> Apply the foundation in the centre of your face and blend outwards using Artist Face Brush. </p>
+ 		<p> For touch-ups, lightly dab the areas requiring additional coverage.</p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 79.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+
+
+	     </div> 
+		 
+     </div> 
+  </div>
+  
+  <div id="oilDetails" class="product-detail">
+     <div class="detail-container"> <div class="image-section"> 
+     <img src="swatch5/fdfaceoil.jpg" class="main-img" alt="faceblush"> 
+     </div>
+
+	 <div class="info-section">
+	 <h2>OTHERS</h2><br>
+
+  <!-- MATERIAL BOX --> 
+  <div class="info-box"> 
+     <h3>DETAILS </h3>
+     <ol> 
+
+		<p>Ingredients</p>
+		<p> 1. Hydroxydecyl Ubiquinone (Idebenone): Act as antioxidants and freshens your skin.
+		Make it hydrate, glowing and fresh. </p>
+		<p> 2. Ascorbyl Palmitate (Vitamin C): Even your skintone and protecting skin from 
+		free-radical damage.</p>
+     </ol> 
+  </div> 
+  
+
+  <!-- DIRECTIONS BOX -->
+  <div class="info-box">
+	 <h3>HOW TO USE </h3><br>
+		<ol>
+		<p> 1. Use one to two drops on bare skin as a prep before makeup application for smooth and dewy skin </p>
+		<p> 2. Combine few drops with foundation to improve make up application and give the complexion a smooth, dewy appearance.  </p>
+ 		<p> Add a few drops with moisturizer at night to boost hydration up to 24 hours. </p><br>
+		
+		</ol>
+		</div> 
+	 
+		
+		<div class="info-box">
+		<br><p><b>Price:</b> RM 89.90</p><br>
+		</div> 
+	
+ <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+                <!-- Popup Thank You -->
+                <div id="thankYouPopup" class="popup">
+                    <div class="popup-content">
+                        <p>Thank you for adding the product to your cart!</p>
+                        <button class="close-popup" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+	
+
+	     </div> 
+		 
+     </div> 
+  </div>
+
+
+ <footer>
+ 
+ </footer>
+
+  <script>
+    // Show product details when an image is clicked
+    function showDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Show specific product details when a variant image is clicked
+    function showProductDetails(detailId) {
+        document.getElementById(detailId).style.display = "block";
+    }
+
+    // Close the product details section
+    function closeDetail(detailId) {
+        document.getElementById(detailId).style.display = "none";
+    }
+	
+	// Function to show the "Thank You" popup when Add to Cart is clicked
+    function addToCart() {
+         document.getElementById("thankYouPopup").style.display = "flex"; // Show popup
+    }
+
+    // Function to close the "Thank You" popup
+    function closePopup() {
+        document.getElementById("thankYouPopup").style.display = "none"; // Hide popup
+    }
+	
+ </script>
+</body>
+</html>
